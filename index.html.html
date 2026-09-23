@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&amp;family=Bebas+Neue&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<script src="./video-slot.js"></script>
+<meta name="ext-resource-dependency" content="uploads/reels-1790183988699-vni9.mp4" data-resource-id="r1">
+<meta name="ext-resource-dependency" content="uploads/reels-1790183989714-psfv.mp4" data-resource-id="r2">
+<meta name="ext-resource-dependency" content="uploads/reels-1790183986204-pu3e.mp4" data-resource-id="r3">
+<meta name="ext-resource-dependency" content="uploads/reels-1790183987132-1u4j.mp4" data-resource-id="r4">
+<meta name="ext-resource-dependency" content="uploads/horizontal-1790183940452-hpov.mp4" data-resource-id="hz">
+<meta name="ext-resource-dependency" content="uploads/carrossel1-1790183907876-jox5.jpg" data-resource-id="c1_1">
+<meta name="ext-resource-dependency" content="uploads/carrossel1-1790183913010-dvnq.jpg" data-resource-id="c1_2">
+<meta name="ext-resource-dependency" content="uploads/carrossel1-1790183907889-bjlg.jpg" data-resource-id="c1_3">
+<meta name="ext-resource-dependency" content="uploads/carrossel1-1790183907994-bhih.jpg" data-resource-id="c1_4">
+<meta name="ext-resource-dependency" content="uploads/carrossel1-1790183907907-5wa2.jpg" data-resource-id="c1_5">
+<meta name="ext-resource-dependency" content="uploads/carrossel1-1790183907954-lsqb.jpg" data-resource-id="c1_6">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183899356-z42m.webp" data-resource-id="c2_1">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183899363-i7om.webp" data-resource-id="c2_2">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183899374-ysye.webp" data-resource-id="c2_3">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183899389-ui2e.webp" data-resource-id="c2_4">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183899397-iex0.webp" data-resource-id="c2_5">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183905158-p8f2.webp" data-resource-id="c2_6">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183899417-imrf.webp" data-resource-id="c2_7">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183905167-999g.webp" data-resource-id="c2_8">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183905177-zlv0.webp" data-resource-id="c2_9">
+<meta name="ext-resource-dependency" content="uploads/carrossel2-1790183899442-fp8o.webp" data-resource-id="c2_10">
+<meta name="ext-resource-dependency" content="uploads/logo-1790183869499-4utz.png" data-resource-id="logo">
+<meta name="ext-resource-dependency" content="uploads/paleta-1790183815636-ix8a.png" data-resource-id="pal">
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-bg-color="#121212"><rect width="100" height="100" fill="#121212"></rect><text x="50" y="62" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="30" fill="#ffffff" letter-spacing="-1">JC</text></svg></template>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #121212; color: #ffffff; -webkit-font-smoothing: antialiased; }
+a { color: #ffffff; text-decoration: none; }
+a:hover { color: #aaaaaa; }
+::selection { background: #ffffff; color: #121212; }
+*:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }
+@keyframes jc-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="background: #121212; color: #fff; font-family: Inter,system-ui,sans-serif; font-weight: 300; overflow-x: hidden; position: relative; font-size: 15px">
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(16px,4vw,56px);backdrop-filter:blur(14px);background:rgba(18,18,18,0.55);border-bottom:1px solid rgba(255,255,255,0.10)">
+  <a href="#topo" style="font-family:Syne,sans-serif;font-weight:700;font-size:12px;letter-spacing:0.18em;text-transform:uppercase">John Cutrim ©</a>
+  <div style="display:flex;align-items:center;gap:clamp(14px,2.4vw,34px);font-size:11px;letter-spacing:0.16em;text-transform:uppercase">
+    <a href="#sobre">Sobre</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#servicos" style="display:none" data-nav-wide="1">Serviços</a>
+    <a href="#contato" style="border-bottom:1px solid #fff;padding-bottom:2px">Contato ↗</a>
+  </div>
+</nav>
+
+<section id="topo" data-screen-label="Hero" style="position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(96px,14vh,150px) clamp(16px,4vw,56px) clamp(24px,4vh,44px);box-sizing:border-box;isolation:isolate;overflow:hidden;clip-path:inset(0)">
+  <div style="position:absolute;inset:0;z-index:-2;overflow:hidden">
+    <img src="uploads/hero-1790183796608-na1x.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;object-position:{{ heroPos }};transform:scale({{ heroScale }});transform-origin:{{ heroPos }}">
+  </div>
+  <div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(18,18,18,0.72) 0%,rgba(18,18,18,0.45) 45%,rgba(18,18,18,0.96) 100%)"></div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,60px);align-items:flex-start;justify-content:space-between">
+    
+    <h1 data-reveal="1" style="margin:0;font-family:Syne,sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(32px,7.2vw,148px);line-height:0.86;letter-spacing:-0.03em;max-width:100%;min-width:0;flex:1 1 100%;text-wrap:balance;opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)"><sc-if value="{{ headlineA }}" hint-placeholder-val="{{ true }}"></sc-if><sc-if value="{{ headlineB }}" hint-placeholder-val="{{ false }}"><span>Elevando o seu conteúdo ao próximo nível</span></sc-if><span style="text-decoration-line: none; font-style: normal; font-size: clamp(34px, 7.4vw, 100px); display: block">Stories que retêm.<br>Vídeos que convertem.</span></h1><p data-reveal="1" data-delay="160" style="margin:8px 0 0;max-width:24ch;font-size:11px;line-height:1.7;letter-spacing:0.14em;text-transform:uppercase;color:#aaaaaa;opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)">Retenção, ritmo e estratégia<br>em cada corte.</p>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:clamp(24px,4vw,48px);margin-top:clamp(40px,10vh,120px)">
+    <div data-reveal="1" data-delay="300" style="max-width:46ch;opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)">
+      <p style="margin:0 0 26px;font-size:clamp(14px,1.35vw,18px);line-height:1.65;color:#dcdcdc">
+        <strong style="font-weight:500;color:#fff">John Cutrim</strong> — Social Media &amp; Video Editor. Transformando ideias em narrativas visuais que geram autoridade e vendas.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="#portfolio" style="display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border:1px solid rgba(255,255,255,0.55);border-radius:999px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#fff;transition:background .35s ease,color .35s ease,border-color .35s ease" style-hover="background:#ffffff;color:#121212;border-color:#ffffff">Ver portfólio</a>
+        <a href="#contato" style="display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border:1px solid #ffffff;border-radius:999px;background:#ffffff;color:#121212;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;transition:background .35s ease,color .35s ease" style-hover="background:transparent;color:#ffffff">Fale comigo</a>
+      </div>
+    </div>
+    <div style="display:flex;align-items:flex-end;gap:clamp(18px,3vw,40px)">
+      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#aaaaaa;line-height:1.8">Reels<br>Carrosséis<br>Branding</div>
+      <div style="font-family: Bebas Neue; font-weight: 800; font-size: 83px; line-height: 0.8; letter-spacing: 0.06em; font-feature-settings: 'tnum'">©J26</div>
+    </div>
+  </div>
+</section>
+
+<div style="border-top:1px solid rgba(255,255,255,0.12);overflow:hidden;padding:14px 0">
+  <div style="display:flex;width:max-content;animation:jc-marquee 34s linear infinite;gap:0">
+    <div style="display:flex;gap:56px;padding-right:56px;font-family:Syne,sans-serif;font-weight:600;font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#aaaaaa"><span>Roteiro</span><span>•</span><span>Direção</span><span>•</span><span>Edição</span><span>•</span><span>Legendas</span><span>•</span><span>Sonorização</span><span>•</span><span>Identidade visual</span><span>•</span><span>Gestão de conteúdo</span><span>•</span></div>
+    <div style="display:flex;gap:56px;padding-right:56px;font-family:Syne,sans-serif;font-weight:600;font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#aaaaaa"><span>Roteiro</span><span>•</span><span>Direção</span><span>•</span><span>Edição</span><span>•</span><span>Legendas</span><span>•</span><span>Sonorização</span><span>•</span><span>Identidade visual</span><span>•</span><span>Gestão de conteúdo</span><span>•</span></div>
+  </div>
+</div>
+
+<section id="sobre" data-screen-label="Sobre" style="border-top:1px solid rgba(255,255,255,0.12);padding:clamp(60px,11vh,140px) clamp(16px,4vw,56px)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:clamp(28px,4vw,64px);align-items:start">
+    <div style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#aaaaaa">[ Sobre ]</div>
+    <div style="grid-column:span 2;min-width:0">
+      <p data-reveal="1" style="margin:0;font-family:Syne,sans-serif;font-weight:600;font-size:clamp(20px,2.7vw,44px);line-height:1.22;letter-spacing:-0.01em;text-wrap:pretty;opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)">
+        Sou um estrategista de conteúdo focado em <span style="color:#aaaaaa">transformar a presença digital</span> de profissionais. Do roteiro à edição final, cuido de todas as etapas.
+      </p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(20px,3vw,48px);margin-top:clamp(36px,6vh,72px)">
+        <p data-reveal="1" data-delay="120" style="margin:0;font-size:14px;line-height:1.8;color:#aaaaaa;opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)">Gravação, direção, design de carrosséis e gestão de marca — um único responsável do conceito à publicação.</p>
+        <p data-reveal="1" data-delay="220" style="margin:0;font-size:14px;line-height:1.8;color:#aaaaaa;opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)">Entendo que cada pixel e cada corte importam para reter a atenção do seu cliente.</p>
+        <div data-reveal="1" data-delay="320" style="display:flex;gap:clamp(20px,3vw,44px);opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)">
+          <div><div style="font-family:Syne,sans-serif;font-weight:700;font-size:clamp(26px,3vw,40px);font-feature-settings:'tnum'">+10</div><div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#aaaaaa;margin-top:6px">Projetos Entregues</div></div>
+          <div><div style="font-family:Syne,sans-serif;font-weight:700;font-size:clamp(26px,3vw,40px);font-feature-settings:'tnum'">100%</div><div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#aaaaaa;margin-top:6px">De Dedicação e Estratégia</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" data-screen-label="Portfólio" style="border-top:1px solid rgba(255,255,255,0.12);padding:clamp(60px,11vh,140px) clamp(16px,4vw,56px)">
+  <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(28px,5vh,56px)">
+    <h2 style="margin:0;font-family:Syne,sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(30px,5.4vw,84px);line-height:0.9;letter-spacing:-0.03em">Portfólio</h2>
+    <div style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#aaaaaa">Selecionados 2026</div>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:clamp(14px,2.4vw,36px);border-top:1px solid rgba(255,255,255,0.12);border-bottom:1px solid rgba(255,255,255,0.12);padding:16px 0;margin-bottom:clamp(28px,5vh,56px)">
+    <sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
+      <button type="button" onClick="{{ f.select }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-family:Inter,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;display:flex;align-items:center;gap:10px;color:{{ f.color }};border-bottom:1px solid {{ f.line }};transition:color .3s ease">
+        <span style="font-feature-settings:'tnum';opacity:0.6">{{ f.num }}</span>{{ f.label }}
+      </button>
+    </sc-for>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:{{ gridGap }};container-type:inline-size">
+    <sc-for list="{{ items }}" as="it" hint-placeholder-count="6">
+      <sc-if value="{{ it.show }}" hint-placeholder-val="{{ true }}">
+        <figure data-reveal="1" style="margin:0;flex:none;width:{{ it.w }};opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)">
+          <div onMouseEnter="{{ it.enter }}" onMouseLeave="{{ it.leave }}" onClick="{{ it.tap }}" style="position:relative;width:100%;aspect-ratio:{{ it.ar }};border:1px solid rgba(255,255,255,0.12);overflow:hidden">
+            <sc-if value="{{ it.isVideo }}" hint-placeholder-val="{{ false }}">
+              <video src="{{ it.video }}" poster="{{ it.poster }}" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" controls="{{ it.controls }}" style="width:100%;height:100%;object-fit:cover;display:block;background:#0c0c0c"></video>
+            </sc-if>
+            <sc-if value="{{ it.isSlot }}" hint-placeholder-val="{{ true }}">
+              <video-slot id="{{ it.slot }}" src="{{ it.src }}" type="{{ it.type }}" placeholder="{{ it.hint }}"></video-slot>
+            </sc-if>
+            <sc-if value="{{ it.isCarousel }}" hint-placeholder-val="{{ false }}">
+              <carousel-slot id="{{ it.slot }}" slides="10" srcs="{{ it.srcs }}" placeholder="{{ it.hint }}"></carousel-slot>
+            </sc-if>
+            <sc-if value="{{ it.isLink }}" hint-placeholder-val="{{ false }}">
+              <a href="{{ it.link }}" target="_blank" rel="noopener noreferrer" style="position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-start;padding:16px;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,0.6) 100%)" style-hover="background:rgba(0,0,0,0.35)">
+                <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid rgba(255,255,255,0.7);border-radius:999px;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;background:rgba(18,18,18,0.45)">▶ Assistir</span>
+              </a>
+            </sc-if>
+            <sc-if value="{{ it.hasInfo }}" hint-placeholder-val="{{ false }}">
+              <button type="button" aria-label="Sobre este projeto" onMouseEnter="{{ it.infoEnter }}" onMouseLeave="{{ it.infoLeave }}" onClick="{{ it.infoTap }}" style="position:absolute;top:10px;right:10px;z-index:6;width:28px;height:28px;padding:0;display:flex;align-items:center;justify-content:center;background:rgba(18,18,18,0.45);border:0;border-radius:999px;cursor:pointer;color:#dcdcdc;transition:color .3s ease,background .3s ease" style-hover="color:#ffffff;background:rgba(18,18,18,0.75)">
+                <span style="width:18px;height:18px;box-sizing:border-box;border:1.3px solid currentColor;border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-style:italic;font-size:11px;line-height:1">i</span>
+              </button>
+              <div style="position:absolute;top:44px;right:10px;left:10px;z-index:5;pointer-events:none;display:flex;justify-content:flex-end;opacity:{{ it.infoOpacity }};transform:translateY({{ it.infoShift }});transition:opacity .3s ease,transform .3s ease">
+                <p style="margin:0;max-width:26ch;padding:14px 16px;background:rgba(0,0,0,0.85);border:1px solid rgba(255,255,255,0.14);font-family:Inter,system-ui,sans-serif;font-size:13px;line-height:1.55;color:#ffffff;text-wrap:pretty">
+                  <strong style="display:block;margin-bottom:6px;font-weight:500;font-size:10px;letter-spacing:0.16em;text-transform:uppercase">{{ it.descTitle }}</strong>{{ it.descBody }}
+                </p>
+              </div>
+            </sc-if>
+            <sc-if value="{{ it.hasOverlay }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute;inset:0;z-index:4;pointer-events:none;display:flex;align-items:center;justify-content:center;padding:clamp(18px,8%,36px);background:rgba(0,0,0,0.78);opacity:{{ it.ovOpacity }};transition:opacity .3s ease">
+                <p style="margin:0;max-width:30ch;text-align:center;font-family:Inter,system-ui,sans-serif;font-weight:400;font-size:14px;line-height:1.6;color:#ffffff;text-wrap:pretty">
+                  <strong style="display:block;margin-bottom:10px;font-weight:500;font-size:11px;letter-spacing:0.16em;text-transform:uppercase">{{ it.descTitle }}</strong>{{ it.descBody }}
+                </p>
+              </div>
+            </sc-if>
+          </div>
+          <figcaption style="display:flex;justify-content:space-between;gap:12px;padding-top:12px;font-size:10px;letter-spacing:0.16em;text-transform:uppercase">
+            <span>{{ it.title }}</span><span style="color:#aaaaaa">{{ it.meta }}</span>
+          </figcaption>
+        </figure>
+      </sc-if>
+    </sc-for>
+  </div>
+</section>
+
+<section id="servicos" data-screen-label="Serviços" style="border-top:1px solid rgba(255,255,255,0.12);padding:clamp(60px,11vh,140px) clamp(16px,4vw,56px)">
+  <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(32px,6vh,72px)">
+    <h2 style="margin:0;font-family:Syne,sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(30px,5.4vw,84px);line-height:0.9;letter-spacing:-0.03em">Serviços</h2>
+    <div style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#aaaaaa;max-width:30ch;line-height:1.8">Planos sob medida para profissionais liberais, clínicas, escritórios e empresas.</div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0;border-top:1px solid rgba(255,255,255,0.12)">
+    <div data-reveal="1" style="padding:{{ svcP1 }};border-right:{{ svcBR }};border-bottom:{{ svcBB }};opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)">
+      <div style="font-size:10px;letter-spacing:0.22em;color:#aaaaaa;font-feature-settings:'tnum'">[01]</div>
+      <h3 style="margin:18px 0 16px;font-family:Syne,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(18px,1.9vw,26px);line-height:1.15;letter-spacing:-0.01em">Edição de vídeo completa</h3>
+      <p style="margin:0 0 20px;font-size:14px;line-height:1.8;color:#aaaaaa">Planos mensais recorrentes para quem precisa de consistência e volume de Reels, TikTok e Shorts com roteirização e cortes dinâmicos.</p>
+      <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#dcdcdc">
+        <li>Roteiro &amp; estrutura de retenção</li><li>Cortes, ritmo e motion</li><li>Legendas e trilha</li>
+      </ul>
+    </div>
+    <div data-reveal="1" data-delay="120" style="padding:{{ svcP2 }};border-right:{{ svcBR }};border-bottom:{{ svcBB }};opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)">
+      <div style="font-size:10px;letter-spacing:0.22em;color:#aaaaaa;font-feature-settings:'tnum'">[02]</div>
+      <h3 style="margin:18px 0 16px;font-family:Syne,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(18px,1.9vw,26px);line-height:1.15;letter-spacing:-0.01em">Social media estratégico</h3>
+      <p style="margin:0 0 20px;font-size:14px;line-height:1.8;color:#aaaaaa">Gestão completa e mensal do Instagram: linha editorial, identidade visual, paleta de cores, design de posts, legendas e planejamento.</p>
+      <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#dcdcdc">
+        <li>Linha editorial mensal</li><li>Carrosséis e estáticos</li><li>Relatório de desempenho</li>
+      </ul>
+    </div>
+    <div data-reveal="1" data-delay="240" style="padding:{{ svcP3 }};opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)">
+      <div style="font-size:10px;letter-spacing:0.22em;color:#aaaaaa;font-feature-settings:'tnum'">[03]</div>
+      <h3 style="margin:18px 0 16px;font-family:Syne,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(18px,1.9vw,26px);line-height:1.15;letter-spacing:-0.01em">Pacotes avulsos &amp; projetos</h3>
+      <p style="margin:0 0 20px;font-size:14px;line-height:1.8;color:#aaaaaa">Criação de carrosséis e edição de vídeos cobrados por unidade. Perfeito para demandas pontuais, lançamentos ou criativos de anúncios.</p>
+      <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#dcdcdc">
+        <li>Carrosséis e estáticos por lote</li><li>Edição de vídeo individual (mín. 4)</li><li>Identidade visual e branding avulso</li>
+      </ul>
+    </div>
+  </div>
+</section><section id="contato" data-screen-label="Contato" style="border-top:1px solid rgba(255,255,255,0.12);padding:clamp(60px,12vh,150px) clamp(16px,4vw,56px) clamp(24px,4vh,40px)">
+  
+
+  <h2 style="margin: 0 0 clamp(36px,6vh,72px); font-family: Syne,sans-serif; font-weight: 800; text-transform: uppercase; font-size: clamp(32px,9vw,117px); line-height: 0.95; letter-spacing: -0.04em; min-width: 0; text-wrap: balance; text-align: left; color: #ffffff">Vamos construir<br>algo juntos?</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(18px,2.4vw,32px);border-top:1px solid rgba(255,255,255,0.12);padding-top:clamp(24px,4vh,44px)">
+    <a href="{{ whatsappHref }}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border:1px solid #ffffff;border-radius:999px;background:#ffffff;color:#121212;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;transition:background .35s ease,color .35s ease" style-hover="background:transparent;color:#ffffff">WhatsApp<span>↗</span></a>
+    <a href="{{ instagramHref }}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border:1px solid rgba(255,255,255,0.55);border-radius:999px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;transition:background .35s ease,color .35s ease" style-hover="background:#ffffff;color:#121212">{{ instagramLabel }}<span>↗</span></a>
+    <a href="mailto:johncutrim.content@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Or%C3%A7amento%20-%20Gest%C3%A3o%20de%20Redes%20Sociais&amp;body=Ol%C3%A1%2C%20John!%20Vi%20o%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os%20de%20gest%C3%A3o%20de%20perfil%20e%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos.%0D%0A%0D%0AMeu%20nome%3A%0D%0AMeu%20perfil%20do%20Instagram%3A%0D%0A" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border:1px solid rgba(255,255,255,0.55);border-radius:999px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;transition:background .35s ease,color .35s ease" style-hover="background:#ffffff;color:#121212">E-mail<span>↗</span></a>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:clamp(40px,8vh,96px);padding-top:18px;border-top:1px solid rgba(255,255,255,0.12);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#aaaaaa">
+    <span>{{ copyright }}</span>
+    <span>Social Media &amp; Video Editor</span>
+    <a href="#topo">Voltar ao topo ↑</a>
+  </div>
+</section>
+
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;headline&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Stories que retêm&quot;,&quot;Elevando o conteúdo&quot;],&quot;default&quot;:&quot;Stories que retêm&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Conteúdo&quot;},&quot;heroX&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;default&quot;:0,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Foto do topo&quot;},&quot;heroY&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;default&quot;:34,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Foto do topo&quot;},&quot;heroZoom&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:100,&quot;max&quot;:200,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;default&quot;:124,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Foto do topo&quot;},&quot;reel1&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Portfólio&quot;},&quot;reel2&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Portfólio&quot;},&quot;reel3&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Portfólio&quot;},&quot;reel4&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Portfólio&quot;},&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5598970005221&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;whatsappMessage&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Olá! Conheci seu trabalho pelo portfólio e gostaria de solicitar um orçamento.&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;instagram&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;eujohn.sm&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;email&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;johncutrim.content@gmail.com&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;}}">
+const CATS = [
+  { key: 'all', num: '[00]', label: 'Tudo' },
+  { key: 'reels', num: '[01]', label: 'Reels & Vídeos' },
+  { key: 'carrossel', num: '[02]', label: 'Carrosséis' },
+  { key: 'branding', num: '[03]', label: 'Identidade visual' },
+];
+
+// ————— PORTFÓLIO —————
+// Cada item aceita IMAGEM ou VÍDEO:
+//   • imagem  → deixe como está e arraste a foto direto no espaço do site
+//   • vídeo do seu computador → coloque o arquivo na pasta uploads/ e escreva
+//     video: 'uploads/meu-reel.mp4'   (opcional: poster: 'uploads/capa.jpg')
+//   • vídeo do Instagram/YouTube/Drive → use link: 'https://...'
+//     (mostra a capa arrastável + botão "Assistir" abrindo em nova aba)
+// Arquivos do projeto (a mesma lista está nas <meta ext-resource-dependency> do topo)
+const FILES = {
+  "r1": "uploads/reels-1790183988699-vni9.mp4",
+  "r2": "uploads/reels-1790183989714-psfv.mp4",
+  "r3": "uploads/reels-1790183986204-pu3e.mp4",
+  "r4": "uploads/reels-1790183987132-1u4j.mp4",
+  "hz": "uploads/horizontal-1790183940452-hpov.mp4",
+  "c1_1": "uploads/carrossel1-1790183907876-jox5.jpg",
+  "c1_2": "uploads/carrossel1-1790183913010-dvnq.jpg",
+  "c1_3": "uploads/carrossel1-1790183907889-bjlg.jpg",
+  "c1_4": "uploads/carrossel1-1790183907994-bhih.jpg",
+  "c1_5": "uploads/carrossel1-1790183907907-5wa2.jpg",
+  "c1_6": "uploads/carrossel1-1790183907954-lsqb.jpg",
+  "c2_1": "uploads/carrossel2-1790183899356-z42m.webp",
+  "c2_2": "uploads/carrossel2-1790183899363-i7om.webp",
+  "c2_3": "uploads/carrossel2-1790183899374-ysye.webp",
+  "c2_4": "uploads/carrossel2-1790183899389-ui2e.webp",
+  "c2_5": "uploads/carrossel2-1790183899397-iex0.webp",
+  "c2_6": "uploads/carrossel2-1790183905158-p8f2.webp",
+  "c2_7": "uploads/carrossel2-1790183899417-imrf.webp",
+  "c2_8": "uploads/carrossel2-1790183905167-999g.webp",
+  "c2_9": "uploads/carrossel2-1790183905177-zlv0.webp",
+  "c2_10": "uploads/carrossel2-1790183899442-fp8o.webp",
+  "logo": "uploads/logo-1790183869499-4utz.png",
+  "pal": "uploads/paleta-1790183815636-ix8a.png"
+};
+const RES = (id) => (window.__resources && window.__resources[id]) || FILES[id];
+
+const WORKS = [
+  // Vídeos verticais (arraste o MP4 direto no quadro, ou use os Tweaks reel1–4 para links)
+  // descTitle / descBody = texto que aparece no hover (ou toque, no celular)
+  { slot: 'jc-p1', file: 'r1', type: 'video', cat: 'reels', ar: '9 / 16', title: 'Reel vertical 01', meta: 'Reels', hint: 'Arraste o reel (MP4) ou a capa',
+    descTitle: 'Gestão & Edição', descBody: 'Roteiro focado em quebra de objeções e cortes dinâmicos para aumentar a retenção do público.' },
+  { slot: 'jc-p2', file: 'r2', type: 'video', cat: 'reels', ar: '9 / 16', title: 'Reel vertical 02', meta: 'Reels', hint: 'Arraste o reel (MP4) ou a capa',
+    descTitle: 'Posicionamento & Autoridade', descBody: 'Estratégia de conteúdo institucional estruturada para gerar conexão e confiança com o cliente.' },
+  { slot: 'jc-p3', file: 'r3', type: 'video', cat: 'reels', ar: '9 / 16', title: 'Reel vertical 03', meta: 'Reels', hint: 'Arraste o reel (MP4) ou a capa',
+    descTitle: 'Estética & Narrativa Visual', descBody: 'Edição focada em gerar desejo e valor através de um visual sofisticado e transições fluidas.' },
+  { slot: 'jc-p5', file: 'r4', type: 'video', cat: 'reels', ar: '9 / 16', title: 'Reel vertical 04', meta: 'Reels', hint: 'Arraste o reel (MP4) ou a capa',
+    descTitle: 'Conteúdo de Conversão', descBody: 'Roteiro focado em topo de funil para atrair novos seguidores e direcionar para o link da bio.' },
+  // Vídeo horizontal publicado no feed — ocupa duas colunas
+  { slot: 'jc-p4', file: 'hz', type: 'video', cat: 'reels', ar: '16 / 9', span: 'span 2', title: 'Vídeo horizontal', meta: 'Post do feed', hint: 'Arraste o vídeo horizontal (MP4)',
+    descTitle: 'Audiovisual Premium', descBody: 'Edição cinematográfica de alto padrão, sonorização imersiva e correção de cor avançada.' },
+  // Carrosséis: arraste VÁRIAS imagens de uma vez; as setas passam os slides
+  { slot: 'jc-c1', files: ['c1_1','c1_2','c1_3','c1_4','c1_5','c1_6'], cat: 'carrossel', ar: '4 / 5', carousel: true, title: 'Carrossel 01', meta: 'Instagram', hint: 'Arraste as imagens do carrossel',
+    descTitle: 'Atração & Autoridade', descBody: 'Conteúdo educativo estruturado para gerar salvamentos e educar o mercado.' },
+  { slot: 'jc-c2', files: ['c2_1','c2_2','c2_3','c2_4','c2_5','c2_6','c2_7','c2_8','c2_9','c2_10'], cat: 'carrossel', ar: '4 / 5', carousel: true, title: 'Carrossel 02', meta: 'Instagram', hint: 'Arraste as imagens do carrossel',
+    descTitle: 'Design & Copywriting', descBody: 'Post institucional focado em Branding Pessoal para humanizar o perfil.' },
+  { slot: 'jc-b1', file: 'logo', type: 'image', cat: 'branding', ar: '1 / 1', title: 'Logotipo', meta: 'Branding', hint: 'Arraste a logo',
+    descTitle: 'Branding para Redes Sociais', descBody: 'Criação de marca exclusiva pensada para funcionar perfeitamente em formatos digitais, fotos de perfil e assinaturas de posts.' },
+  { slot: 'jc-b2', file: 'pal', type: 'image', cat: 'branding', ar: '1 / 1', title: 'Paleta de cores', meta: 'Branding', hint: 'Arraste a paleta / identidade',
+    descTitle: 'Psicologia das Cores', descBody: 'Desenvolvimento de paleta cromática estratégica para transmitir sofisticação, profissionalismo e padronizar toda a estética do feed.' },
+];
+
+class Component extends DCLogic {
+  state = { filter: 'all', hover: null, info: null, wide: window.matchMedia('(min-width: 820px)').matches };
+
+  isTouch() { return window.matchMedia('(hover: none)').matches; }
+
+  rootRef = React.createRef();
+
+  componentDidMount() {
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        this.show(e.target);
+        this.io.unobserve(e.target);
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -5% 0px' });
+    requestAnimationFrame(() => this.scan());
+    this.mq = window.matchMedia('(min-width: 820px)');
+    this.applyWide = () => {
+      if (this.state.wide !== this.mq.matches) this.setState({ wide: this.mq.matches });
+      document.querySelectorAll('[data-nav-wide]').forEach((el) => {
+        el.style.display = this.mq.matches ? 'inline' : 'none';
+      });
+    };
+    this.applyWide();
+    this.mq.addEventListener('change', this.applyWide);
+  }
+
+  componentDidUpdate() { requestAnimationFrame(() => this.scan()); }
+
+  componentWillUnmount() {
+    clearTimeout(this.failsafe);
+    if (this.io) this.io.disconnect();
+    if (this.mq) this.mq.removeEventListener('change', this.applyWide);
+  }
+
+  show(el) {
+    const d = parseInt(el.getAttribute('data-delay') || '0', 10);
+    el.style.transitionDelay = d + 'ms';
+    el.style.opacity = '1';
+    el.style.transform = 'none';
+  }
+
+  nodes() {
+    const root = (this.rootRef && this.rootRef.current) || document;
+    return Array.from(root.querySelectorAll('[data-reveal]'));
+  }
+
+  scan() {
+    const els = this.nodes();
+    els.forEach((el) => {
+      if (el.dataset.jcSeen) return;
+      el.dataset.jcSeen = '1';
+      if (this.io) this.io.observe(el); else this.show(el);
+    });
+    clearTimeout(this.failsafe);
+    this.failsafe = setTimeout(() => this.nodes().forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 1.1) this.show(el);
+    }), 700);
+  }
+
+  renderVals() {
+    const p = this.props;
+    const active = this.state.filter;
+    // ————— DADOS DE CONTATO (edite aqui ou no painel de Tweaks) —————
+    // WhatsApp: número completo com DDI 55 + DDD. Ex.: 5598970005221
+    const WHATSAPP = p.whatsapp ?? '5598970005221';
+    // Instagram: seu @ (sem a arroba). Ex.: eujohn.sm
+    const INSTAGRAM = p.instagram ?? 'eujohn.sm';
+    // E-mail profissional. Ex.: johncutrim.content@gmail.com
+    const EMAIL = p.email ?? 'johncutrim.content@gmail.com';
+    const WHATSAPP_MSG = p.whatsappMessage ?? 'Olá! Conheci seu trabalho pelo portfólio e gostaria de solicitar um orçamento.';
+    // ——————————————————————————————————————————————————————
+    let wa = String(WHATSAPP).replace(/\D/g, '');
+    if (wa.length <= 11) wa = '55' + wa;
+    const ig = String(INSTAGRAM).trim().replace(/^@/, '').replace(/^https?:\/\/(www\.)?instagram\.com\//, '').replace(/\/$/, '');
+    const hKey = p.headline ?? 'Stories que retêm';
+
+    const hx = p.heroX ?? 0, hy = p.heroY ?? 34;
+    const wide = this.state.wide;
+    const arNum = (s) => { const [a, b] = s.split('/').map(Number); return a / b; };
+    const itemW = (w) => {
+      const ar = arNum(w.ar);
+      if (ar < 0.7) return wide ? 'calc((100cqw - 72px) / 4 - 0.5px)' : 'calc((100cqw - 12px) / 2 - 0.5px)';
+      return wide ? 'calc((100cqw - 50px) * ' + ar + ' / 3.3778)' : 'calc((100cqw - 13px) * ' + ar + ' / 2)';
+    };
+    const sp = 'clamp(24px,3vw,44px)', sb = 'clamp(32px,5vh,64px)', sx = 'clamp(18px,2.4vw,40px)';
+    return {
+      rootRef: this.rootRef,
+      heroPos: wide ? hx + '% ' + hy + '%' : '56% 30%',
+      heroScale: wide ? (p.heroZoom ?? 124) / 100 : 1,
+      gridGap: wide ? '24px' : '12px',
+      svcP1: wide ? sp + ' ' + sx + ' ' + sb + ' 0' : '28px 0 36px',
+      svcP2: wide ? sp + ' ' + sx + ' ' + sb : '28px 0 36px',
+      svcP3: wide ? sp + ' 0 ' + sb + ' ' + sx : '28px 0 36px',
+      svcBR: wide ? '1px solid rgba(255,255,255,0.12)' : '0',
+      svcBB: wide ? '0' : '1px solid rgba(255,255,255,0.12)',
+      headlineA: hKey !== 'Elevando o conteúdo',
+      headlineB: hKey === 'Elevando o conteúdo',
+      filters: CATS.map((c) => ({
+        num: c.num,
+        label: c.label,
+        color: active === c.key ? '#ffffff' : '#aaaaaa',
+        line: active === c.key ? '#ffffff' : 'transparent',
+        select: () => this.setState({ filter: c.key }),
+      })),
+      items: WORKS.map((w, i) => {
+        // Tweaks "Portfólio": cole um caminho uploads/….mp4 (toca no site)
+        // ou um link do Instagram/YouTube (abre em nova aba).
+        const over = String(p['reel' + (i + 1)] ?? '').trim();
+        const isFile = /\.(mp4|webm|mov|m4v)(\?|$)/i.test(over);
+        const video = isFile ? over : w.video;
+        const link = !isFile && over ? over : w.link;
+        return {
+          ...w,
+          video,
+          link,
+          w: itemW(w),
+          src: w.file ? RES(w.file) : '',
+          type: w.type || '',
+          srcs: w.files ? w.files.map(RES).join('|') : '',
+          hasOverlay: !!w.descBody && !w.carousel,
+          hasInfo: !!w.descBody && !!w.carousel,
+          ovOpacity: this.state.hover === w.slot ? 1 : 0,
+          infoOpacity: this.state.info === w.slot ? 1 : 0,
+          infoShift: this.state.info === w.slot ? '0px' : '-6px',
+          enter: () => { if (!w.carousel && !this.isTouch()) this.setState({ hover: w.slot }); },
+          leave: () => { if (!w.carousel && !this.isTouch()) this.setState({ hover: null }); },
+          tap: () => { if (!w.carousel && this.isTouch()) this.setState((s) => ({ hover: s.hover === w.slot ? null : w.slot })); },
+          infoEnter: () => { if (!this.isTouch()) this.setState({ info: w.slot }); },
+          infoLeave: () => { if (!this.isTouch()) this.setState({ info: null }); },
+          infoTap: (e) => { e.stopPropagation(); if (this.isTouch()) this.setState((s) => ({ info: s.info === w.slot ? null : w.slot })); },
+          show: active === 'all' || active === w.cat,
+          isVideo: !!video,
+          isCarousel: !video && !!w.carousel,
+          isSlot: !video && !w.carousel,
+          isLink: !video && !w.carousel && !!link,
+          poster: w.poster || undefined,
+          controls: w.controls !== false,
+        };
+      }),
+      whatsappHref: 'https://wa.me/' + wa + '?text=' + encodeURIComponent(WHATSAPP_MSG),
+      instagramHref: 'https://instagram.com/' + ig,
+      instagramLabel: '@' + ig,
+      mailHref: 'mailto:' + EMAIL,
+      copyright: '© ' + new Date().getFullYear() + ' John Cutrim. Todos os direitos reservados.',
+    };
+  }
+}
+</script>
+</body>
+</html>
